@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        >
+
+        <TextView
+            android:id="@+id/night_records_Item_tv_name"
+            android:textSize="18dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:text="学生名"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp"
+            android:layout_centerVertical="true"
+            >
+            <TextView
+                android:id="@+id/night_records_Item_tv_date"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="日期"
+                android:maxLines="1"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/night_records_Item_tv_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已签到"
+        android:textColor="@color/daoQing"
+        android:layout_toLeftOf="@+id/night_records_Item_tv_time"
+        android:layout_marginEnd="50dp"
+        android:textSize="18dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="6dp"
+        />
+
+    <TextView
+        android:id="@+id/night_records_Item_tv_time"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="8:00"
+        android:textColor="@color/colorAccent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:textSize="13dp"
+        android:layout_marginRight="6dp"
+        />
+
+
+</RelativeLayout>

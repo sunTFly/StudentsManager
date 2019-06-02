@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/me_back"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:clickable="false"
+                android:background="@color/back">
+
+                <util.CircleImageView
+                    android:id="@+id/me_pic"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/head_sculpture_beautify"
+                    android:src="@mipmap/head_sculpture_1" />
+
+                <TextView
+                    android:id="@+id/me_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/me_pic"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="名字"
+                    android:textColor="@color/white"
+                    android:textSize="23dp" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:paddingTop="10dp">
+
+                    <util.ListViewForScrollView
+                        android:id="@+id/me_menu_lv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/main_menu_beautify"
+                        android:divider="@drawable/listview_divider"
+                        android:dividerHeight="1dp"
+                        android:listSelector="@drawable/listview_selector"
+                        android:translationY="-40dp" />
+
+                    <util.ListViewForScrollView
+                        android:id="@+id/me_menu_lv2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/me_menu_lv"
+                        android:background="@drawable/main_menu_beautify"
+                        android:listSelector="@drawable/listview_selector"
+                        android:divider="@drawable/listview_divider"
+                        android:dividerHeight="1dp"
+                        android:translationY="-30dp"
+                        />
+
+                    <util.ListViewForScrollView
+                        android:id="@+id/me_menu_lv3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/me_menu_lv2"
+                        android:background="@drawable/main_menu_beautify"
+                        android:listSelector="@drawable/listview_selector"
+                        android:divider="@drawable/listview_divider"
+                        android:dividerHeight="1dp"
+                        android:translationY="-20dp"
+                        />
+
+                    <Button
+                        android:id="@+id/me_btn_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:text="登 录"
+                        android:textSize="20dp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/me_btn_login_beautify"
+                        android:layout_below="@id/me_menu_lv3"
+                        android:translationY="-5dp"
+                        android:elevation="2dp"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

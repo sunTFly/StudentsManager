@@ -1,0 +1,6 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/white" /><!-- 背景填充颜色 -->
+    <stroke android:width="3dp" android:color="@color/LightSkyBlue" /><!-- 描边，边框宽度、颜色 -->
+    <corners android:radius="100dp" /><!-- 边角圆弧的半径 -->
+    <padding android:left="3dp" android:top="3dp" android:right="3dp" android:bottom="3dp" /><!-- 四周留出来的空白 -->
+</shape>

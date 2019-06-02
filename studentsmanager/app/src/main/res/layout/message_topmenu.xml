@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+            <LinearLayout
+                android:id="@+id/message_chat_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/message_menu_tv_chat"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="消息"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/lightGray"
+                    android:textSize="20dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/message_menu_line_chat"
+                    android:layout_width="60dp"
+                    android:layout_gravity="center"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/message_friends_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/message_menu_tv_friends"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="通讯录"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/lightGray"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/message_menu_line_friends"
+                    android:layout_width="60dp"
+                    android:layout_gravity="center"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="10dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

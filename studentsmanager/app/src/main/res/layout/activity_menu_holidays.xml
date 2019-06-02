@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_night"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    android:fitsSystemWindows="true"
+    android:clipChildren="false">
+
+    <RelativeLayout
+        android:id="@+id/holidays_layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/holidays_return"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/icon_login_return"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请假申请"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView2" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:layout_below="@id/holidays_layout_top"
+        android:padding="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        <EditText
+            android:id="@+id/holidays_et_reason"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="请假事由..."
+            android:gravity="top"
+            />
+
+        <GridView
+            android:id="@+id/holidays_img_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/holidays_et_reason"
+            android:gravity="center"
+            android:numColumns="3"
+            >
+
+        </GridView>
+        
+        <Button
+            android:id="@+id/holidays_btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/holidays_btn_beautify"
+            android:layout_marginTop="10dp"
+            android:text="添加图片"
+            android:textColor="@color/white"
+            android:layout_below="@id/holidays_img_reason"
+            />
+
+        <LinearLayout
+            android:id="@+id/holidays_layout_top2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/holidays_btn_add"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="选择请假起始日期:"
+                    android:textSize="18dp"
+                    />
+
+                <TextView
+                    android:id="@+id/holidays_tv_startdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2019-3-28"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@color/colorAccent"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择请假结束日期:"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:id="@+id/holidays_tv_enddate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2019-3-28"
+                android:textSize="20dp"
+                android:layout_marginLeft="40dp"
+                android:textColor="@color/colorPrimary"
+                />
+
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/holidays_btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="提交申请"
+                android:layout_margin="20dp"
+                android:padding="2dp"
+                android:textColor="@color/white"
+                android:background="@drawable/holidays_btn_beautify"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/me_back"
+     >
+
+    <ScrollView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <util.ListViewForScrollView
+                android:id="@+id/message_chat_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_menu_beautify"
+                android:listSelector="@drawable/listview_selector"
+                android:padding="5dp"
+                android:divider="@color/divider"
+                android:dividerHeight="1dp"
+                >
+
+
+            </util.ListViewForScrollView>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+    
+</LinearLayout>

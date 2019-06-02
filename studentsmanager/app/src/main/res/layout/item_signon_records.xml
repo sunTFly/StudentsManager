@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    >
+
+    <TextView
+        android:id="@+id/signon_records_classname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:text="课程"
+        />
+
+    <TextView
+        android:id="@+id/signon_records_teacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="教师"
+        />
+
+    <TextView
+        android:id="@+id/signon_records_classroom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:textColor="@color/back"
+        android:text="教室"
+        />
+
+    <TextView
+        android:id="@+id/signon_records_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:textColor="@color/lightGray"
+        android:text="状态"
+        />
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/login_return"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/icon_login_return"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学生登录"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            />
+
+
+    </RelativeLayout>
+
+    <util.CircleImageView
+        android:id="@+id/login_pic"
+        android:layout_width="165dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/head_sculpture_beautify"
+        android:src="@mipmap/icon_login_pic"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/layout_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/login_pic">
+
+        <include
+            android:id="@+id/input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/input_layout" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/login_ll_remember"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <CheckBox
+            android:id="@+id/login_cb_remembername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="记住学号"
+            android:layout_weight="1"
+            android:textColor="@color/gray"
+            />
+
+        <CheckBox
+            android:id="@+id/login_cb_rememberpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="记住密码"
+            android:layout_weight="1"
+            android:textColor="@color/gray"
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:textSize="16dp"
+        android:background="@drawable/me_btn_login_beautify"
+        android:textColor="@color/white"
+        android:layout_margin="15dp"
+        android:layout_below="@+id/login_ll_remember" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_margin="20dp"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="忘记密码?"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/lightGray"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

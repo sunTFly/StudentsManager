@@ -1,0 +1,190 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/back"
+    >
+
+    <RelativeLayout
+        android:id="@+id/classtb_layout_top1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/back"
+        >
+
+        <ImageView
+            android:id="@+id/classtb_return"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/icon_login_return"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学生课表"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/classtb_layout_top2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_below="@id/classtb_layout_top1"
+        android:orientation="horizontal"
+        android:padding="13dp"
+        >
+
+        <Spinner
+            android:id="@+id/classtb_spinner_term"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            >
+            </Spinner>
+
+        <Spinner
+            android:id="@+id/classtb_spinner_week"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            >
+
+        </Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/classtb_layout_top3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_below="@+id/classtb_layout_top2"
+        android:paddingLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            style="@style/classtb_week"
+            android:text="一"
+            />
+        <TextView
+            style="@style/classtb_week"
+            android:text="二"
+            />
+        <TextView
+            style="@style/classtb_week"
+            android:text="三"
+            />
+        <TextView
+            style="@style/classtb_week"
+            android:text="四"
+            />
+        <TextView
+            style="@style/classtb_week"
+            android:text="五"
+            />
+        <TextView
+            style="@style/classtb_week"
+            android:text="六"
+            />
+        <TextView
+            style="@style/classtb_week"
+            android:text="日"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_below="@id/classtb_layout_top3"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/lightGray"
+                android:padding="3dp"
+                >
+
+                <TextView
+                    style="@style/classtb_jiesu"
+                    android:text="1"
+                    />
+                <TextView
+                    style="@style/classtb_jiesu"
+                    android:text="2"
+                    />
+                <TextView
+                    style="@style/classtb_jiesu"
+                    android:text="3"
+                    />
+                <TextView
+                    style="@style/classtb_jiesu"
+                    android:text="4"
+                    />
+                <TextView
+                    style="@style/classtb_jiesu"
+                    android:text="5"
+                    />
+                <TextView
+                    style="@style/classtb_jiesu"
+                    android:text="6"
+                    />
+                <TextView
+                    style="@style/classtb_jiesu"
+                    android:text="7"
+                    />
+
+            </LinearLayout>
+
+            <util.GridViewForScrollView
+                android:id="@+id/classtb_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:stretchMode="columnWidth"
+                android:numColumns="7"
+                android:padding="3dp"
+                >
+
+            </util.GridViewForScrollView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

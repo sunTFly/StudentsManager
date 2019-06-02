@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    android:fitsSystemWindows="true"
+    android:clipChildren="false">
+
+    <RelativeLayout
+        android:id="@+id/gohome_layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/gohome_return"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/icon_login_return"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="归家打卡"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/gohome_layout_top2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_below="@id/gohome_layout_top"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请在回家后及时打卡"
+            android:textSize="30dp"
+            android:layout_margin="20dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gohome_layout_center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:background="@color/white"
+        android:clipChildren="false"
+        android:layout_below="@id/gohome_layout_top2"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:paddingTop="10dp">
+
+            <util.CircleImageView
+                android:id="@+id/gohome_pic"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/head_sculpture_1"
+                android:background="@drawable/head_sculpture_beautify"
+                android:padding="10dp"
+                android:translationY="-50dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/gohome_pic"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/linearLayout">
+
+                <TextView
+                    android:id="@+id/tv_gohome_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="名字"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_gohome_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="学号"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:background="@color/lightGray" />
+
+        <Button
+            android:id="@+id/gohome_btn_signon"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/gohome_layout_center"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:text="回家打卡"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:background="@drawable/night_btn_signon_beautiful"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            >
+
+            <TextView
+                android:id="@+id/gohome_tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="如长时间未定位请开启GPS"
+                android:textSize="16dp"
+                android:textColor="@color/colorAccent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

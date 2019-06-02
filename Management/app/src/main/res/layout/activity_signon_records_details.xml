@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/back"
+    >
+
+    <RelativeLayout
+        android:id="@+id/signon_details_layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/signon_details_return"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/icon_return"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/signon_records_details_bjname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="班级名"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/signon_details_layout_top1"
+        android:layout_below="@+id/signon_details_layout_top"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/peopleNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="签到人数统计: 35/50"
+            android:textSize="18dp"
+            android:textColor="@color/colorAccent"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/signon_details_layout_top1"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+
+        <ListView
+            android:id="@+id/signon_records_details_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_menu_beautify"
+            android:divider="@color/divider"
+            android:dividerHeight="1dp"
+            android:listSelector="@drawable/listview_selector"
+            android:padding="5dp">
+
+        </ListView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

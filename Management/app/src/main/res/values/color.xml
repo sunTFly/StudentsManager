@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="LightSkyBlue">#88b7c9</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#BEBEBE</color>
+    <color name="bottom_title_back">#3387CEEB</color>
+    <color name="red">#FF0000</color>
+    <color name="black">#000000</color>
+    <color name="lightGray">#cccccc</color>
+    <color name="alphaGray">#33cccccc</color>
+    <color name="lightBlue">#87CEFA</color>
+    <color name="ghostWhite">#F8F8FF</color>
+    <color name="whiteSmoke">#F5F5F5</color>
+    <color name="main_back">#f1f6f9</color>
+    <color name="back">#3598db</color>
+    <color name="tomato">#FF6347</color>
+    <color name="me_back">#e5e3e4</color>
+    <color name="divider">#15000000</color>
+    <color name="orangeRed">#FF4500</color>
+    <color name="login_btn">#55b2f5</color>
+    <color name="daoQing">#40c985</color>
+    <color name="wangui">#fc9917</color>
+    <color name="weiGui">#ff4141</color>
+    <color name="chatMeBack">#aee563</color>
+    <color name="transparent">#00ffffff</color>
+
+</resources>

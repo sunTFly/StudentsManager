@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/me_back"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:clickable="false"
+                android:background="@mipmap/main_back_pic"
+                >
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:paddingTop="10dp">
+
+                    <com.example.management.util.GridViewForScrollView
+                        android:id="@+id/gridview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:columnWidth="80dp"
+                        android:gravity="center"
+                        android:background="@drawable/main_menu_beautify"
+                        android:listSelector="@android:color/transparent"
+                        android:numColumns="3"
+                        android:stretchMode="spacingWidthUniform"
+                        android:translationY="-30dp"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:translationY="-20dp"
+                        android:layout_below="@id/gridview"
+                        android:orientation="vertical"
+                        >
+
+                        <com.example.management.util.ListViewForScrollView
+                            android:id="@+id/main_notice"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/main_menu_beautify"
+                            android:divider="@color/divider"
+                            android:dividerHeight="1dp"
+                            android:listSelector="@drawable/listview_selector"
+                            android:padding="5dp"
+                            />
+                        
+                        <LinearLayout
+                            android:id="@+id/main_ll_no_net"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="40dp"
+                            android:visibility="gone"
+                            >
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/icon_no_net"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="无网络连接，请检查网络"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                />
+
+                            <Button
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/main_btn_reget"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="16dp"
+                                android:background="@color/gray"
+                                android:text="重试"
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/main_ll_loading"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="40dp"
+                            android:visibility="gone"
+                            >
+
+                            <ProgressBar
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="10dp"
+                                android:layout_gravity="center"
+                                android:indeterminateDrawable="@drawable/progress_bar"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="加载中..."
+                                android:layout_margin="10dp"
+                                android:textSize="21dp"
+                                android:textColor="@color/gray"
+                                />
+
+                        </LinearLayout>
+
+
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

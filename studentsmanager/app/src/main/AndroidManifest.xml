@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.studentsmanager">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 定位 -->
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon, android:theme">
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:theme="@style/bottomactivityTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivity"></activity>
+        <activity android:name="test.TestActivity"></activity>
+        <activity android:name="fragment_me.LoginActivity"></activity>
+        <activity android:name="fragment_me.PerfectInfoActivity"></activity>
+        <activity android:name="fragment_main.menu_night.NightActivity"></activity>
+        <activity
+            android:name=".activity.RegisterAndRecognizeActivity"
+            android:launchMode="singleTop" />
+        <activity android:name="fragment_main.menu_sign_on.SignOnActivity"></activity>
+        <activity android:name="fragment_main.menu_sign_on.SignOnDetailsActivity"></activity>
+        <activity android:name="fragment_me.signon_records.SignonRecordsActivity"></activity>
+        <activity android:name="fragment_me.night_records.NightRecordsActivity"></activity>
+        <activity android:name="fragment_me.class_table.ClassTbActivity"></activity>
+        <activity android:name="fragment_main.menu_holidays.HolidaysActivity"></activity>
+        <activity android:name="fragment_me.holidays_records.HolidaysRecodsActivity"></activity>
+        <activity android:name="fragment_message.chat.ChatActivity"></activity>
+        <activity android:name="fragment_main.menu_gohome.GoHomeActivity"></activity>
+        <activity android:name="fragment_main.NewsWebActivity"></activity>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="8300ef5a57aa9c111d1880c2808c9d85" />
+        <service android:name="com.amap.api.location.APSService"></service>
+    </application>
+
+</manifest>

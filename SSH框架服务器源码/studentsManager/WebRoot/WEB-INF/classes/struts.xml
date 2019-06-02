@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.objectFactory" value="spring" />
+	<package name="default" extends="json-default" namespace="/">
+
+		<action name="studentsLoginAction" class="StudentsAction"
+			method="studentsLogin">
+			<result name="success" type="json">
+				<param name="root">studentsLogintMap</param>
+			</result>
+			<result name="fail" type="json">
+				<param name="root">studentsLogintMap</param>
+			</result>
+		</action>
+		<action name="teacherLoginAction" class="TeacherAction" method="teacherLogin">
+			<result name="success" type="json">
+				<param name="root">teacherLogintMap</param>
+			</result>
+			<result name="fail" type="json">
+				<param name="root">teacherLogintMap</param>
+			</result>
+		</action>
+		<action name="teacherupdateAction" class="TeacherAction"
+			method="updateTeacher">
+			<result name="success" type="json">
+				<param name="root">teacherUpadatetMap</param>
+			</result>
+			<result name="fail" type="json">
+				<param name="root">teacherUpadatetMap</param>
+			</result>
+		</action>
+		<action name="teacherleaveAction" class="TeacherAction" method="leaveRecord">
+			<result name="success" type="json">
+				<param name="root">TeacherLeaveRecordMap</param>
+			</result>
+		</action>
+		<action name="teachersigninAction" class="TeacherAction"
+			method="signInRecord">
+			<result name="success" type="json">
+				<param name="root">signRecordMap</param>
+			</result>
+		</action>
+		<action name="teacherissignAction" class="TeacherAction"
+			method="issignin">
+			<result name="success" type="json">
+				<param name="root">TeacherissignMap</param>
+			</result>
+		</action>
+		<action name="teacherClassAction" class="TeacherAction" method="signasclass">
+			<result name="success" type="json">
+				<param name="root">teacherClassMap</param>
+			</result>
+		</action>
+		<action name="teacherHomeAction" class="TeacherAction" method="homeRecord">
+			<result name="success" type="json">
+				<param name="root">homeRecordMap</param>
+			</result>
+		</action>
+		<action name="teacherbackAction" class="TeacherAction" method="backsRecord">
+			<result name="success" type="json">
+				<param name="root">backRecordMap</param>
+			</result>
+		</action>
+		<action name="teacherleaveDealAction" class="TeacherAction"
+			method="leaveDeal">
+			<result name="success" type="json">
+				<param name="root">TeacherLeaveDealMap</param>
+			</result>
+		</action>
+		<action name="studentsFeatureAction" class="StudentsAction"
+			method="stuFeature">
+			<result name="success" type="json">
+				<param name="root">studentsfeatureMap</param>
+			</result>
+			<result name="fail" type="json">
+				<param name="root">studentsfeatureMap</param>
+			</result>
+		</action>
+		<action name="teacherpositionAction" class="TeacherAction"
+			method="teacherSignIn">
+			<result name="success" type="json">
+				<param name="root">TeacherSigninMap</param>
+			</result>
+			<result name="fail" type="json">
+				<param name="root">TeacherSigninMap</param>
+			</result>
+		</action>
+		<action name="studentsUpdateAction" class="StudentsAction"
+			method="updateStudents">
+			<result name="success" type="json">
+				<param name="root">studentsUpadatetMap</param>
+			</result>
+			<result name="fail" type="json">
+				<param name="root">studentsUpadatetMap</param>
+			</result>
+		</action>
+		<action name="studentsLeaveAction" class="LeavesAction" method="studentsLeave">
+			<result name="success" type="json">
+				<param name="root">studentsLeaveMap</param>
+			</result>
+			<result name="fail" type="json">
+				<param name="root">studentsLeaveMap</param>
+			</result>
+		</action>
+		<action name="LeaveRecordAction" class="LeavesAction" method="leaveRecord">
+			<result name="success" type="json">
+				<param name="root">LeaveRecordMap</param>
+			</result>
+		</action>
+		<action name="BackRecordAction" class="BackAction" method="backsRecord">
+			<result name="success" type="json">
+				<param name="root">backRecordMap</param>
+			</result>
+		</action>
+		<action name="BackStateMapAction" class="BackAction" method="backstate">
+			<result name="success" type="json">
+				<param name="root">backStateMap</param>
+			</result>
+		</action>
+		<action name="studentsBackAction" class="BackAction" method="studentsback">
+			<result name="success" type="json">
+				<param name="root">studentsBackMap</param>
+			</result>
+			<result name="fail" type="json">
+				<param name="root">studentsBackMap</param>
+			</result>
+		</action>
+		<action name="backHomeAction" class="BackAction" method="backhome">
+			<result name="success" type="json">
+				<param name="root">BackHomeMap</param>
+			</result>
+			<result name="fail" type="json">
+				<param name="root">BackHomeMap</param>
+			</result>
+		</action>
+		<action name="SignInRecordAction" class="SignInAction" method="singInRecord">
+			<result name="success" type="json">
+				<param name="root">signInRecordMap</param>
+			</result>
+		</action>
+		<action name="SignInAction" class="SignInAction" method="studentssignIn">
+			<result name="success" type="json">
+				<param name="root">studentsSignInMap</param>
+			</result>
+			<result name="fail" type="json">
+				<param name="root">studentsSignInMap</param>
+			</result>
+		</action>
+		<action name="WeekclassAction" class="WeekAction" method="weekClass">
+			<result name="success" type="json">
+				<param name="root">studentWeekMap</param>
+			</result>
+		</action>
+	</package>
+</struts>
